@@ -1,0 +1,172 @@
+body{
+    background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDViOWhzdnllaGJ2cDc0bWZ0dzBoN3libzBjeGRnZmNreHlodDB1dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UYBDCJjwOd9Re/giphy.gif);
+    cursor: url(/public/lightsaber.svg), auto;  
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    width: 200px;
+    height: auto;
+    align-items: center;
+    margin: 0 auto;
+}
+.header .logo{
+    background-image: url(/public/SW-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 400px;
+}
+input[type="text"] {
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    animation: neonBorder 2s infinite alternate;
+    background: transparent;
+    color: #ffffff;
+}
+.header #search{
+    background-color: #2196C3;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 50;
+    width: 150px;
+    background: transparent;
+    height: 40px;
+    color: #ffffff;
+    animation: neonBorder 2s infinite alternate;
+}
+.starships-container{
+    background-color: transparent;
+    color: aliceblue;
+}
+.starships-list ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+}
+@keyframes neonBorder {
+    0% {
+        border-color: #00aaff; 
+        box-shadow: 0 0 3px #00aaff, 0 0 3px #00aaff, 0 0 10px #00aaff;
+    }
+    50% {
+        border-color: #ffffff; 
+        box-shadow: 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 10px #ffffff;
+    }
+    100% {
+        border-color: #00aaff;
+        box-shadow: 0 0 3px #00aaff, 0 0 3px #00aaff, 0 0 10px #00aaff;
+    }
+}
+.starship-detail{
+    position: relative;
+    border: 2px solid;
+    width: 400px;
+    height: 600px;
+    animation: neonBorder 6s infinite alternate;
+    background: rgba(223, 223, 98, 0.1);
+    box-sizing: border-box;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.starship-detail::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #ffffff, 0 0 12px #00aaff;
+}
+#btmp{
+    background-color: #2196C3;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 50;
+    width: 150px;
+    background: transparent;
+    height: 40px;
+    color: #ffffff;
+    animation: neonBorder 2s infinite alternate;  
+}
+.starships-list ul li{
+    position: relative;
+    border: 2px solid;
+    width: 312px;
+    height: 400px;
+    animation: neonBorder 6s infinite alternate;
+    background: rgba(223, 223, 98, 0.1);
+    box-sizing: border-box;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.starships-list ul li::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #ffffff, 0 0 12px #00aaff;
+}
+.starship-name{
+    padding: 15px;
+}
+.model-speed{
+    box-sizing: border-box;
+    font-size: 17px;
+    border: 1px solid whitesmoke;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+}
+.load{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#loadmore{
+    background-color: #2196C3;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 50;
+    width: 150px;
+    background: transparent;
+    height: 40px;
+    color: #ffffff;
+    animation: neonBorder 2s infinite alternate;  
+}
+
+  
+  /* Mobile */
+  @media (max-width: 767px) {
+    .starships-container {
+      width: 100%;
+      padding: 0 10px;
+    }
+    .header h1 {
+      font-size: 2em;
+    }
+    .starships-list ul li {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+
